@@ -1,11 +1,17 @@
 Package: mapsEcuador
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Ecuador choroplet maps in PDF format
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Jorge Albuja
+Maintainer: Jorge Albuja <albuja@yahoo.com>
+Description: Easy create Ecuador choroplet maps in PDF format at province and cantonlevels.
+    With a single function you can get a printer ready PDF choroplet map with many
+    customizing options. Galapagos islands included in a frame secondary map.
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
+Imports: scales, dplyr, ggplot2, stringr, sf, classInt, ggspatial,
+    png, grid, showtext, sysfonts, grDevices
+Depends: 
+    R (>= 2.10)
+RoxygenNote: 7.1.0
