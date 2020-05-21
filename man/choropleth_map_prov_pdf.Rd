@@ -100,6 +100,9 @@ A PDF map can be created using default values simply calling the function only w
 
 A lot of options are available for controlling data and customizing titles, labels, fonts, sizes and colors.
 
+Base map shape files were downloaded from:
+https://www.ecuadorencifras.gob.ec/documentos/web-inec/Cartografia/Clasificador_Geografico/2015/
+
 Developed by Jorge Albuja (albuja@hyahoo.com)
 }
 \examples{

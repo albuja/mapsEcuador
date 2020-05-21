@@ -7,6 +7,8 @@ mapsEcuador R package provide simple functions to create printer ready PDF Ecuad
 
 No GIS knowledge is required. You need just provide data and geographic data will be internally added.
 
+Base map shape files were downloaded from:
+https://www.ecuadorencifras.gob.ec/documentos/web-inec/Cartografia/Clasificador_Geografico/2015/
 
 Installation
 ------------
