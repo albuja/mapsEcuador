@@ -91,14 +91,14 @@
 \item{logo_aspect_ratio}{numeric. Relative 'y' size with respect to 'x' size of PNG logo image, 1 means a square image.}
 }
 \value{
-A ggplot object
+NULL (PDF file created)
 }
 \description{
 This function creates a PDF printer ready file with Ecuador choropleth map using provided data at province level. No GIS knowledge is required. Provide just a named vector of numeric data. Geographic data will be internally added.
 
 A PDF map can be created using default values simply calling the function only with named values vector as unique argument (see examples).
 
-A lot of options are available for controlling data and customizing titles, labels, fonts, sizes and colors.
+A lot of options are available for controlling data and customizing titles, labels, fonts, sizes and colors. See https://fonts.google.com/ for available fonts.
 
 Base map shape files were downloaded from:
 https://www.ecuadorencifras.gob.ec/documentos/web-inec/Cartografia/Clasificador_Geografico/2015/

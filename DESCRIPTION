@@ -11,7 +11,7 @@ License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Imports: scales, dplyr, ggplot2, stringr, sf, classInt, ggspatial,
-    png, grid, showtext, sysfonts, grDevices
+    png, grid, showtext, sysfonts, grDevices, kimisc
 Depends: 
     R (>= 2.10)
 RoxygenNote: 7.1.0

@@ -76,7 +76,19 @@ choropleth_map_prov_pdf <- function(values,
   scores <- tibble(DPA_PROVIN = sprintf('%02d', as.integer(names(values))),
                    VALUE = values,
                    LABEL = paste0(values_preffix, format(round(values, values_dec_places), nsmall = values_dec_places, big.mark = values_big_mark, trim = TRUE), values_suffix)) %>%
-    mutate(!!legend_title := cut(VALUE, breaks = classIntervals(var = VALUE, n = bins, style = bins_style, 5)$brks, include.lowest = TRUE))
+    mutate(!!legend_title := cut_format(VALUE,
+                                        breaks = classIntervals(var = VALUE, n = bins, style = bins_style, 5)$brks,
+                                        include.lowest = TRUE,
+                                        sep = ';  '))
+
+  galapagos <- shp_pro %>%
+    filter(DPA_PROVIN == '20') %>%
+    st_set_geometry(., st_geometry(.) + c(8e5, 0)) %>%
+    st_set_crs(32717)
+
+  shp_pro <- shp_pro %>%
+    filter(DPA_PROVIN != '20') %>%
+    rbind(galapagos)
 
   mapa <- shp_pro %>%
     filter(DPA_PROVIN != '90') %>%
@@ -173,7 +185,8 @@ choropleth_map_prov_pdf <- function(values,
           legend.position = legend_position,
           legend.margin = margin(6, 6, 6, 6),
           legend.background = element_rect(fill = legend_back_color),
-          plot.background = element_rect(fill = background_color),
+          plot.background = element_rect(color = NA,
+                                         fill = background_color),
           panel.background = element_rect(color = NA,
                                           fill = background_color))
 
@@ -194,5 +207,4 @@ choropleth_map_prov_pdf <- function(values,
          scale = map_scale,
          units = 'cm')
 
-  #chart
 }
