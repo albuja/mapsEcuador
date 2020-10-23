@@ -103,7 +103,7 @@ A lot of options are available for controlling data and customizing titles, labe
 Base map shape files were downloaded from:
 https://www.ecuadorencifras.gob.ec/documentos/web-inec/Cartografia/Clasificador_Geografico/2015/
 
-Developed by Jorge Albuja (albuja@hyahoo.com)
+Developed by Jorge Albuja (albuja@yahoo.com)
 }
 \examples{
 # Choropleth map with dummy data
