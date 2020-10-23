@@ -45,3 +45,4 @@ names(values) <- 1:24
 choropleth_map_prov_pdf(values)
 
 ```
+!Map(https://github.com/albuja/mapsEcuador/blob/master/man/mapa.png?raw=true)
