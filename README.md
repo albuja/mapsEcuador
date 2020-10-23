@@ -1,6 +1,5 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-\title{mapsEcuador}
 
 # mapsEcuador
 
@@ -45,4 +44,4 @@ names(values) <- 1:24
 choropleth_map_prov_pdf(values)
 
 ```
-!Map(https://github.com/albuja/mapsEcuador/blob/master/man/mapa.png?raw=true)
+![Map](https://github.com/albuja/mapsEcuador/blob/master/man/mapa.png?raw=true)
