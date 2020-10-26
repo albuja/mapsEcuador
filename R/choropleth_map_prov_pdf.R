@@ -203,7 +203,7 @@ choropleth_map_prov_pdf <- function(values,
          plot = chart,
          width = 25,
          height = 18.22,
-         dpi = 600,
+         dpi = 100,
          scale = map_scale,
          units = 'cm')
 
