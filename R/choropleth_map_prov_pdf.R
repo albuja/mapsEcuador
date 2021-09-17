@@ -87,6 +87,7 @@ choropleth_map_prov_pdf <- function(values,
     st_set_crs(32717)
 
   shp_pro <- shp_pro %>%
+    st_set_crs(32717) %>%
     filter(DPA_PROVIN != '20') %>%
     rbind(galapagos)
 
