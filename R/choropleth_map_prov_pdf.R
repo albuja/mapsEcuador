@@ -81,17 +81,7 @@ choropleth_map_prov_pdf <- function(values,
                                         include.lowest = TRUE,
                                         sep = ';  '))
 
-  galapagos <- shp_pro %>%
-    filter(DPA_PROVIN == '20') %>%
-    st_set_geometry(., st_geometry(.) + c(8e5, 0)) %>%
-    st_set_crs(32717)
-
-  shp_pro <- shp_pro %>%
-    filter(DPA_PROVIN != '20') %>%
-    rbind(galapagos)
-
   mapa <- shp_pro %>%
-    filter(DPA_PROVIN != '90') %>%
     left_join(scores)
 
   labels <- mapa %>%
