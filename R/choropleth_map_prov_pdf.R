@@ -63,6 +63,8 @@ choropleth_map_prov_pdf <- function(values,
   font_add_google(legend_title_font, 'legend_title_font')
   font_add_google(legend_items_font, 'legend_items_font')
   showtext_auto()
+  
+  mapa_base <- st_set_crs(mapa_base, 32717)
 
   box <- st_bbox(mapa_base)
 
