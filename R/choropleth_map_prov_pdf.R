@@ -64,6 +64,8 @@ choropleth_map_prov_pdf <- function(values,
   font_add_google(legend_items_font, 'legend_items_font')
   showtext_auto()
 
+  mapa_base <- st_transform(mapa_base, "+proj=aeqd +lat_0=0 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs")
+
   box <- st_bbox(mapa_base)
 
   if (!is.null(logo_filename)) {
