@@ -64,6 +64,8 @@ choropleth_map_prov_pdf <- function(values,
   font_add_google(legend_items_font, 'legend_items_font')
   showtext_auto()
   
+  st_crs(mapa_base) <- 4236
+  
   box <- st_bbox(mapa_base)
 
   if (!is.null(logo_filename)) {
