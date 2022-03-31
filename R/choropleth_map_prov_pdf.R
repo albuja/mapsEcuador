@@ -64,9 +64,7 @@ choropleth_map_prov_pdf <- function(values,
   font_add_google(legend_items_font, 'legend_items_font')
   showtext_auto()
   
-  st_crs(shp_pro) <- 4326
-
-  box <- st_bbox(shp_pro)
+  box <- st_bbox(mapa_base)
 
   if (!is.null(logo_filename)) {
     logo <- rasterGrob(readPNG(logo_filename),
@@ -83,7 +81,7 @@ choropleth_map_prov_pdf <- function(values,
                                         include.lowest = TRUE,
                                         sep = ';  '))
 
-  mapa <- shp_pro %>%
+  mapa <- mapa_base %>%
     left_join(scores)
 
   labels <- mapa %>%

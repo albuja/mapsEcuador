@@ -8,7 +8,7 @@
 No GIS knowledge is required. You need just provide data and geographic data will be internally added.
 
 Internal base maps shape files were downloaded from:
-https://www.ecuadorencifras.gob.ec/documentos/web-inec/Cartografia/Clasificador_Geografico/2015/
+https://www.ecuadorencifras.gob.ec//documentos/web-inec/Cartografia/Clasificador_Geografico/2012/SHP.zip
 
 Installation
 ------------
