@@ -9,8 +9,21 @@ Description: Easy create Ecuador choroplet maps in PDF format at province and ca
     customizing options. Galapagos islands included in a frame secondary map.
 License: GPL-3
 Encoding: UTF-8
-Imports: scales, dplyr, ggplot2, stringr, sf, classInt, ggspatial,
-    png, grid, showtext, sysfonts, grDevices, kimisc
+Imports: 
+    scales, 
+    dplyr,
+    ggplot2, 
+    stringr, 
+    sf, 
+    classInt,
+    ggspatial,
+    png,
+    grid,
+    showtext,
+    sysfonts,
+    grDevices, 
+    kimisc,
+    utils
 Depends: 
     R (>= 3.5.0)
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.2
