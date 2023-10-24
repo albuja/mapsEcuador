@@ -7,7 +7,7 @@ Maintainer: Jorge Albuja <albuja@yahoo.com>
 Description: Easy create Ecuador choroplet maps in PDF format at province and cantonlevels.
     With a single function you can get a printer ready PDF choroplet map with many
     customizing options. Galapagos islands included in a frame secondary map.
-License: GPL-3
+License: GPL (>= 3)
 Encoding: UTF-8
 Imports: 
     scales, 

@@ -17,7 +17,7 @@ choropleth_map_prov_pdf(
   legend_position = c(0.195, 0.3),
   legend_title_font = "Montserrat",
   legend_items_font = "Montserrat",
-  legend_back_color = "#9bddff",
+  legend_back_color = "#dddddd",
   title_font = "Montserrat",
   title_font_scale = 1,
   title_font_face = "bold",
@@ -156,8 +156,5 @@ Developed by Jorge Albuja (albuja@yahoo.com)
 # Choropleth map with dummy data
 values <- round(runif(24, 10, 1000), 3)
 names(values) <- 1:24
-choropleth_map_prov_pdf(values)
-
-# Changing bin number
 choropleth_map_prov_pdf(values, bins = 5)
 }

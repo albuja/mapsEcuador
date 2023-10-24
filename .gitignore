@@ -4,5 +4,4 @@
 .Ruserdata
 mapsEcuador.Rproj
 .Rbuildignore
-R/sysdata.rds
-mapa.pdf
+
