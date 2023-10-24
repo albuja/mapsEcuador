@@ -132,6 +132,7 @@ choropleth_map_prov_pdf <- function(values,
   showtext::showtext_auto()
   
   #mapa_base <- st_set_crs(mapa_base, 32717)
+  #mapa_base <- st_set_crs(mapa_base, 4326)
   
   st_crs(mapa_base) <- 32717
   
