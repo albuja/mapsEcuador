@@ -133,6 +133,8 @@ choropleth_map_prov_pdf <- function(values,
   
   #mapa_base <- st_set_crs(mapa_base, 32717)
   
+  st_crs(mapa_base) <- 32717
+  
   box <- sf::st_bbox(mapa_base)
   
   map_scale <- map_x_size_cm / 25
